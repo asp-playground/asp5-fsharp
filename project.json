@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0-beta-*",
+  "dependencies": {
+    "FSharp.Dnx": "1.0.0-*",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-*",
+    "Microsoft.Extensions.Logging.Console": "1.0.0-*",
+    "Microsoft.AspNet.Diagnostics": "1.0.0-*",
+    "Microsoft.AspNet.Mvc": "6.0.0-*",
+    "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-*",
+    "Microsoft.AspNet.Server.WebListener": "1.0.0-*",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-*",
+    "Microsoft.AspNet.Tooling.Razor": "1.0.0-*",
+    "Microsoft.AspNet.FileProviders.Embedded": "1.0.0-*"
+  },
+  "frameworks": {
+    "dnx451": { }
+  },
+  "compiler": {
+    "name": "F#",
+    "compilerAssembly": "FSharp.Dnx",
+    "compilerType": "FSharp.Dnx.FSharpProjectCompiler"
+  },
+  "commands": {
+    "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.Kestrel"
+  },
+  "fsharp": {
+    "files": [
+      "utils.fs",
+      "startup.fs",
+      "controllers/home.fs"
+    ]
+  }
+}
